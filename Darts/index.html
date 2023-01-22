@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Darts Rechner</title>
+    
+</head>
+
+<body>
+    <img src="dartsscheibe.avif" usemap="#image-map">
+    <map name="image-map"  id="map" onclick="return false">
+        <!--20er Reihe-->
+        <area href="#" coords="365,111,383,108,400,106,418,107,436,109,449,111,448,126,418,124,396,123,368,128" shape="poly" onclick="myfunctionD20()">
+        <area href="#" coords="368,126,377,124,384,123,391,123,397,123,404,123,413,123,421,124,428,124,439,126,446,128,432,211,381,210" shape="poly" onclick="myfunction20()">
+        <area href="#" coords="380,213,394,212,407,211,420,212,432,214,431,230,413,228,393,227,384,229" shape="poly" onclick="myfunctionT20()">
+        <area href="#" coords="383,231,399,227,416,227,429,230,409,355,401,357" shape="poly" onclick="myFunction20()">
+        <!--1er Reihe -->
+        <area href="#" coords="452,113,467,115,481,117,495,123,504,124,515,130,525,134,532,137,524,153,501,143,480,136,463,131,449,129" shape="poly" onclick="myfunctionD1()">
+        <area href="#" coords="448,129,472,133,490,139,504,144,525,153,484,233,433,210" shape="poly" onclick="myfunction1()">
+        <area href="#" coords="433,215,443,217,456,220,469,224,481,230,476,244,461,237,446,233,431,230" shape="poly" onclick="myfunctionT1()">
+        <area href="#" coords="431,230,448,235,465,241,476,246,419,362,408,356" shape="poly" onclick="myFunction1()">
+        <!--18er Reihe-->
+        <area href="#" coords="533,141,553,150,570,162,586,175,602,190,589,200,561,176,526,154" shape="poly" onclick="myfunctionD18()">
+        <area href="#" coords="526,155,542,164,562,179,583,193,589,202,528,263,486,230" shape="poly" onclick="myfunction18()">
+        <area href="#" coords="485,230,497,239,510,250,528,263,516,274,492,254,477,245" shape="poly" onclick="myfunctionT18()">
+        <area href="#" coords="476,247,488,253,498,259,507,267,514,275,423,365,420,362" shape="poly" onclick="myFunction18()">
+        <!--4er Reihe-->
+        <area href="#" coords="603,192,613,203,622,213,632,227,639,237,648,252,652,261,641,268,624,239,609,221,593,204" shape="poly" onclick="myfunctionD4()">
+        <area href="#" coords="589,200,608,221,623,240,639,267,560,307,547,284,529,261" shape="poly" onclick="myfunction4()">
+        <area href="#" coords="530,265,543,284,560,308,544,315,529,289,518,276" shape="poly" onclick="myfunctionT4()">
+        <area href="#" coords="515,272,531,294,544,315,429,373,424,365" shape="poly" onclick="myFunction4()">
+        <!--13er Reihe-->
+        <area href="#" coords="653,264,659,275,665,293,670,310,674,325,678,343,662,346,653,308,645,283,641,271" shape="poly" onclick="myfunctionD13()">
+        <area href="#" coords="638,271,645,286,653,306,659,335,661,343,578,358,571,336,566,321,560,308" shape="poly" onclick="myfunction13()">
+        <area href="#" coords="560,307,566,323,572,344,575,357,561,361,554,338,547,316" shape="poly" onclick="myfunctionT13()">
+        <area href="#" coords="545,316,556,342,561,362,429,380,428,376" shape="poly" onclick="myFunction13()">
+        <!--6er Reihe-->
+        <area href="#" coords="677,345,680,361,680,385,678,411,676,428,664,426,666,376,664,347" shape="poly" onclick="myfunctionD6()">
+        <area href="#" coords="578,361,663,347,665,371,665,392,664,411,661,427,612,418,576,412" shape="poly" onclick="myfunction6()">
+        <area href="#" coords="562,362,573,361,577,375,577,402,575,412,560,410" shape="poly" onclick="myfunctionT6()">
+        <area href="#" coords="430,380,561,362,564,387,558,411,429,389" shape="poly" onclick="myFunction6()">
+        <!--10er Reihe-->
+        <area href="#" coords="" shape="poly" onclick="myfunctionD10()">
+        <area href="#" coords="" shape="poly" onclick="myfunction10()">
+        <area href="#" coords="" shape="poly" onclick="myfunctionT10()">
+        <area href="#" coords="" shape="poly" onclick="myFunction10()">
+        <!--15er Reihe-->
+        <area href="#" coords="" shape="poly" onclick="myfunctionD15()">
+        <area href="#" coords="" shape="poly" onclick="myfunction15()">
+        <area href="#" coords="" shape="poly" onclick="myfunctionT15()">
+        <area href="#" coords="" shape="poly" onclick="myFunction1()">
+        <!--2er Reihe-->
+        <area href="#" coords="" shape="poly" onclick="myfunctionD2()">
+        <area href="#" coords="" shape="poly" onclick="myfunction2()">
+        <area href="#" coords="" shape="poly" onclick="myfunctionT2()">
+        <area href="#" coords="" shape="poly" onclick="myFunction2()">
+        <!--17er Reihe-->
+        <area href="#" coords="" shape="poly" onclick="myfunctionD17()">
+        <area href="#" coords="" shape="poly" onclick="myfunction17()">
+        <area href="#" coords="" shape="poly" onclick="myfunctionT17()">
+        <area href="#" coords="" shape="poly" onclick="myFunction17()">
+        <!--3er Reihe-->
+        <area href="#" coords="" shape="poly" onclick="myfunctionD3()">
+        <area href="#" coords="" shape="poly" onclick="myfunction3()">
+        <area href="#" coords="" shape="poly" onclick="myfunction3()">
+        <area href="#" coords="" shape="poly" onclick="myFunction3()">
+
+    </map>
+    
+    <input type="button" id="add0" value="0" onclick="myFunction0()">
+    <input type="button" id="reset" value="zurücksetzen" onclick="resetValue()">
+
+
+
+    <input type="text" id="demo1" value="/" disabled>
+    <input type="text" id="demo2" value="/" disabled>
+    <input type="text" id="demo3" value="/" disabled>
+   
+
+
+
+    
+      
+
+</body>
+</html>
